@@ -26,6 +26,8 @@ I do CSS inside the tag. it overpowers all other methods<br>
 
 
 
-<div style="margin-left:20px" >
-   <textarea runat="server" id="Textarea1" rows="3" cols="5" style="width:25%;">Advanced see if you move this textarea</textarea>                            
-</div>
+<textarea style="position:relative; left:0; top:0; width:200; height:50; ">
+  Advanced see if you move this textarea
+</textarea>
+<input type=button value="Go left" onclick="{
+                     document.getElementById('textarea').style.left = '200px'
