@@ -1,23 +1,4 @@
-
-
-document.addEventListener('keydown', function(event) {
-  const key = event.key.toLowerCase();
-  switch (key) {
-    case 'w':
-      moveUp();
-      break;
-    case 'a':
-      moveLeft();
-      break;
-    case 's':
-      moveDown();
-      break;
-    case 'd':
-      moveRight();
-      break;
-    default:
-      break;
-  }
+Version 0.0.1
 
 <body id="myBody" onLoad="{
 
@@ -147,3 +128,20 @@ function myCheckHit(){
 <img id="myImg02" src="myImgNew.jpg" title="myImg02" style="position:absolute; width:100px;  height:80px; left:350px; top:190px;">
 <img id="myImg03" src="myImgNew.jpg" title="myImg03" style="position:absolute; width:100px; height:80px;  left:500px; top:190px;">
 <img id="myImg04" src="myImgNew.jpg" title="myImg04" style="position:absolute; width:100px; height:80px; left:500px; top:400px;">
+  
+  <br>
+  
+  
+  
+  
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"  onkeydown="{
+
+   document.all.myText01.value = event.key
+
+   if (event.key == 'd') {  // d = go right
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+   }   
+
+   if (event.key == 's') {   // s = go down
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+   }  
