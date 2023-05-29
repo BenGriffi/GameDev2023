@@ -1,5 +1,24 @@
 
 
+document.addEventListener('keydown', function(event) {
+  const key = event.key.toLowerCase();
+  switch (key) {
+    case 'w':
+      moveUp();
+      break;
+    case 'a':
+      moveLeft();
+      break;
+    case 's':
+      moveDown();
+      break;
+    case 'd':
+      moveRight();
+      break;
+    default:
+      break;
+  }
+
 <body id="myBody" onLoad="{
 
   clearInterval(myTimer02)
