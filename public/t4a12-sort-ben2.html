@@ -1,3 +1,5 @@
+<h5>Version 1.0</h5>
+
 <h1 align=center>t4a12 Sort by Ben</h1>
 
 <script>
@@ -19,11 +21,19 @@
    document.getElementById('myDiv01').innerHTML = myTemp
 }">
 
-<input type=button value="Sort" onclick="{
-  let myTemp = 0
-  for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
-     myCards[myLoop] = 0 // you do this stuff
+<input type="button" value="Sort" onclick="sortCards()">
+
+<script>
+  function sortCards() {
+    let myCards = [/* Your array of cards */];
+    myCards.sort(function(a, b) {
+      return a - b;
+    });
+
+    // Display the sorted array or perform further actions
+    console.log(myCards);
   }
+</script>
 }">
 
 <dir id="myDiv01"></div>
