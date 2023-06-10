@@ -4003,8 +4003,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.Destroy,
-		C3.Plugins.Keyboard.Cnds.OnKey,
-		C3.Plugins.Sprite.Acts.SetMirrored
+		C3.Plugins.Keyboard.Cnds.IsKeyDown,
+		C3.Plugins.Sprite.Acts.SetMirrored,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.Keyboard.Cnds.OnKeyReleased,
+		C3.Plugins.Keyboard.Cnds.OnKey
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4115,7 +4118,9 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
-
+		() => "Walk Cycle",
+		() => "Standing",
+		() => "Jump"
 ];
 
 
