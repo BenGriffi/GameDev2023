@@ -1,62 +1,56 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title> Basic web stuff</title>
-  </head>
-  <body>
-    <h5>Version 0.0.4-6</h5>
-    
-    <h1 align=center>t3a01-web-basics-by-ben.html </h1>
-    
-    <a href="https://www.google.ca">Google Link</a><br>
-    Plain Text <b> Bold </b> and <i> Italic </i> <can you put them together<br>
-    <hr>
-    This is an image <br>
-    <img width=200 src="https://cdn.akamai.steamstatic.com/steam/apps/1237970/capsule_616x353.jpg?t=1619804815"><br><br>
-    
-    YouTube Embedded Video <br>
-    <iframe width="481" height="361" src="https://www.youtube.com/embed/6o-p8XLGUuM" title="Animal Crossing Music: Able Sisters" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <hr>
-    <div>This is a </div>
-    <div>div</div>
-    
-    <span>This is </span>
-    <span> a span</span>
-    
-    <h3> Write about Ellis' 10 main areas of coding</h3>
-    
-    <input type=button value="0. Pseudo Code" onclick="{
-                                                       document.getElementById('myDiv01').innerHTML = 'Hello don\'t World'
-                                                       }">
-    
-    <input type=button value="1. Input/Output" onclick="{
-                                                        document.getElementById('myDiv01').innerHTML = 'Input swtsrandomeyd<br>'
-                                                        +'adfs<br>adfs<br>output is...'
-                                                        }">
-    <input type=button value="2. Variables" onclick="{
-                                                     document.getElementById('myDiv01').innerHTML = ' 
-                                                     `The value of z is: ` + z;
-                                                     let x = 5;
-                                                     let y = 6;
-                                                     let z = x + y; 
-                                                     
-                                                     '}">
-    <input type=button value="3. Loops" onClick="{
-    
-    <input type=button value="4. Decisions" onclick="{
-                                                     document.getElementById('myDiv01').innerHTML = '
-                                                     Decisions use the if statement to make true
-                                                     false variable decisions<br>
-                                                     <pre>
-                                                     if (hour < 18) {
-                                                     greeting = \'Good day';
-                                                     }
-                                                     </pre>
-                                                     
-                                                     '}"><br>
-    You do: 2:variables, 3:loops, 5:functions, 6:events, 7:arrays, 8:objects, 9:classes<br>
-    
-    
-    <div id="myDiv01">...</div>
-    <body>
-      </html>
+<head>
+  <title>Basic web stuff</title>
+</head>
+<body>
+  <h5>Version 0.0.5</h5>
+  
+  <h1 align="center">t3a01-web-basics-by-ben.html</h1>
+  
+  <a href="https://www.google.ca">Google Link</a><br>
+  Plain Text <b> Bold </b> and <i> Italic </i> - you can put them together<br>
+  <hr>
+  This is an image <br>
+  <img width="200" src="https://cdn.akamai.steamstatic.com/steam/apps/1237970/capsule_616x353.jpg?t=1619804815"><br><br>
+  
+  YouTube Embedded Video <br>
+  <iframe width="481" height="361" src="https://www.youtube.com/embed/6o-p8XLGUuM" title="Animal Crossing Music: Able Sisters" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <hr>
+  <div>This is a </div>
+  <div>div</div>
+  
+  <span>This is </span>
+  <span>a span</span>
+  
+  <h3>Write about Ellis' 10 main areas of coding</h3>
+  
+  <input type="button" value="0. Pseudo Code" onclick="{
+    document.getElementById('myDiv01').innerHTML = 'Hello don\'t World';
+  }">
+  
+  <input type="button" value="1. Input/Output" onclick="{
+    document.getElementById('myDiv01').innerHTML = 'Input<br>adfs<br>adfs<br>output is...';
+  }">
+  
+  <input type="button" value="2. Variables" onclick="{
+    let x = 5;
+    let y = 6;
+    let z = x + y;
+    document.getElementById('myDiv01').innerHTML = 'The value of z is: ' + z;
+  }">
+  
+  <input type="button" value="3. Loops" onclick="{
+    // Code for loops
+  }">
+  
+  <input type="button" value="4. Decisions" onclick="{
+    document.getElementById('myDiv01').innerHTML = 'Decisions use the if statement to make true/false variable decisions';
+  }"><br>
+  
+  You do: 2: variables, 3: loops, 5: functions, 6: events, 7: arrays, 8: objects, 9: classes<br>
+  
+  <div id="myDiv01">...</div>
+</body>
+</html>
