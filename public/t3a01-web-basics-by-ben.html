@@ -4,7 +4,7 @@
   <title>Basic web stuff</title>
 </head>
 <body>
-  <h5>Version 0.0.5</h5>
+  <h5>Version 0.0.6</h5>
   
   <h1 align="center">t3a01-web-basics-by-ben.html</h1>
   
@@ -42,6 +42,13 @@
   }">
   
   <input type="button" value="3. Loops" onclick="{
+  let output = '';
+  for (let i = 1; i <= 5; i++) {
+    output += 'Loop iteration: ' + i + '<br>';
+  }
+  document.getElementById('myDiv01').innerHTML = output;
+}">
+
     // Code for loops
   }">
   
