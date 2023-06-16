@@ -4,7 +4,7 @@
   <title>Basic web stuff</title>
 </head>
 <body>
-  <h5>Version 0.0.6</h5>
+  <h5>Version 0.0.7</h5>
   
   <h1 align="center">t3a01-web-basics-by-ben.html</h1>
   
@@ -49,14 +49,30 @@
   document.getElementById('myDiv01').innerHTML = output;
 }">
 
-    // Code for loops
-  }">
+    
   
-  <input type="button" value="4. Decisions" onclick="{
-    document.getElementById('myDiv01').innerHTML = 'Decisions use the if statement to make true/false variable decisions';
+  <input type="button" value="4. Decisions" onclick="decisionsFunction()">
+
+<script>
+function decisionsFunction() {
+  let hour = new Date().getHours();
+  let greeting;
+
+  if (hour < 12) {
+    greeting = 'Good morning';
+  } else if (hour < 18) {
+    greeting = 'Good afternoon';
+  } else {
+    greeting = 'Good evening';
+  }
+
+  document.getElementById('myDiv01').innerHTML = greeting;
+}
+</script>
+
   }"><br>
   
-  You do: 2: variables, 3: loops, 5: functions, 6: events, 7: arrays, 8: objects, 9: classes<br>
+  You do: 5: functions, 6: events, 7: arrays, 8: objects, 9: classes<br>
   
   <div id="myDiv01">...</div>
 </body>
